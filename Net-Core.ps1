@@ -1,8 +1,8 @@
 Set-ExecutionPolicy RemoteSigned
 Set-Item WSMan:\localhost\Client\TrustedHosts -Value * -Force
 
-$user = "a-borjano-1"
-$password = ConvertTo-SecureString "1@2l3l4a5N" -AsPlainText -Force
+$user = "Seu usuario"
+$password = ConvertTo-SecureString "Senha" -AsPlainText -Force
 $credentials = New-Object System.Management.Automation.PSCredential ($user, $password)
 
 $computerListPath = "C:\Temp\computer_list1.txt"
